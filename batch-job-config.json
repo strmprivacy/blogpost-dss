@@ -1,0 +1,46 @@
+{
+    "source_data": {
+      "data_connector_ref": { "name": "s3-batch-demo"},
+      "file_name": "uci_online_retail.csv",
+      "data_type": { "csv": { "charset": "UTF-8" } }
+    },
+    "consent": { "default_consent_levels": [ 2 ] },
+    "encryption": {
+      "batch_job_group_id": "7824e975-20e1-4995-b129-2f9582728ca5",
+      "timestamp_config": {
+        "field": "InvoiceDate",
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "default_time_zone": { "id": "Europe/Amsterdam" }
+      }
+    },
+    "event_contract_ref": {
+      "handle": "strmprivacy",
+      "name": "online-retail",
+      "version": "1.0.0"
+    },
+    "encrypted_data": {
+      "target": {
+        "data_connector_ref": { "name": "s3-batch-demo"},
+        "data_type": { "csv": { "charset": "UTF-8" } },
+        "file_name": "uci_online_retail/encrypted.csv"
+      }
+    },
+    "encryption_keys_data": {
+      "target": {
+        "data_connector_ref": { "name": "s3-batch-demo"},
+        "data_type": { "csv": { "charset": "UTF-8" } },
+        "file_name": "uci_online_retail/keys.csv"
+      }
+    },
+    "derived_data": [      {
+        "target": {
+          "data_connector_ref": { "name": "s3-batch-demo"},
+          "data_type": { "csv": { "charset": "UTF-8" } },
+          "file_name": "uci_online_retail/decrypted-0.csv"
+        },
+        "consent_levels": [ 2 ],
+        "consent_level_type": "CUMULATIVE"
+      }
+
+    ]
+  }

@@ -1,0 +1,5 @@
+{
+  "keyField": "CustomerID",
+  "piiFields": { "CustomerID": 1 },
+  "dataSubjectField": "CustomerID"
+}
