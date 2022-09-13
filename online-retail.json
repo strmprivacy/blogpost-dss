@@ -1,37 +1,13 @@
 {
   "name": "UCI Online Retail",
   "nodes": [
-    {
-      "type": "STRING",
-      "name": "InvoiceNo"
-    },
-    {
-      "type": "STRING",
-      "name": "StockCode"
-    },
-    {
-      "type": "STRING",
-      "name": "Description"
-    },
-    {
-      "type": "INTEGER",
-      "name": "Quantity"
-    },
-    {
-      "type": "STRING",
-      "name": "InvoiceDate"
-    },
-    {
-      "type": "STRING",
-      "name": "UnitPrice"
-    },
-    {
-      "type": "STRING",
-      "name": "CustomerID"
-    },
-    {
-      "type": "STRING",
-      "name": "Country"
-    }
+    { "type": "STRING", "name": "InvoiceNo" },
+    { "type": "STRING", "name": "StockCode" },
+    { "type": "STRING", "name": "Description" },
+    { "type": "INTEGER", "name": "Quantity" },
+    { "type": "STRING", "name": "InvoiceDate" },
+    { "type": "STRING", "name": "UnitPrice" },
+    { "type": "STRING", "name": "CustomerID" },
+    { "type": "STRING", "name": "Country" }
   ]
 }
